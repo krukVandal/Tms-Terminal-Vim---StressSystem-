@@ -1,4 +1,4 @@
-# Vim Задача 1: 
+<img width="1052" height="409" alt="image" src="https://github.com/user-attachments/assets/bbbd6ced-76ff-4fb0-a20f-b32e2a73ac11" /># Vim Задача 1: 
 
    - Создал файл `memo` в директории `temp/practice`
      
@@ -59,7 +59,7 @@
     
  3. Через `htop` и фильтры нашёл `nginx`и отслеживал нагрузку
 
- <img width="911" height="723" alt="image" src="https://github.com/user-attachments/assets/87c847b3-2a5c-4edb-bfbf-e6cad8a99810" />
+ <img width="1159" height="300" alt="image" src="https://github.com/user-attachments/assets/78883383-9ad6-4361-adb0-f84802053041" />
 
  4. Логи пользователей:
     
@@ -75,39 +75,50 @@
 # ACL:
  
  1. 
-   - Создал директорию /var/www/server-app
+   - Создал директорию `/var/www/server-app`
 
-   - Создайл файлы readme.md и app.log
+   - Создайл файлы `readme.md` и `app.log`
 
  2. 
-   - Создал директорию uploads
+   - Создал директорию `uploads`
 
-   - Создал группы ftpusers, admins, auditors
+   - Создал группы `ftpusers, admins, auditors`
 
-   - Создал пользователя logger без входа и $HOME /opt/logger
+   - Создал пользователя `logger` без входа и директорию домашнюю `/opt/logger`
+
+ <img width="938" height="366" alt="image" src="https://github.com/user-attachments/assets/ab2f1dc6-ff33-4c97-84cd-06bd1c76a901" />
+
  
  3. С помощью ACL раздал права на директории:
 
-   - Пользователь www-data чтение всей директории
+   - Пользователь `www-data` чтение всей директории
 
-   - Группа ftpusers запись в uploads
+   - Группа `ftpusers` запись в `uploads`
 
-   - Группа admins полные права
+   - Группа `admins` полные права
 
-   - Пользователь logger полные права к файлу app.log
+   - Пользователь `logger` полные права к файлу `app.log`
 
-   - Группе auditors чтение app.log
+   - Группе `auditors` чтение `app.log`
 
- 4. С помощью umask изменил состоние до перезагрузки с 022 на 027.
+ <img width="1068" height="764" alt="image" src="https://github.com/user-attachments/assets/1ad16823-2e45-42b6-96ec-26c64283b15d" />
 
- 5. 
+ 4. С помощью `umask` изменил состоние до перезагрузки с 022 на 027 и создал папку и файл в соответсвии с заданием.
+ 
+ <img width="1052" height="409" alt="image" src="https://github.com/user-attachments/assets/616a76f4-68cd-45d8-9fda-2b14fcbcf2e2" />
 
-   - Дал возможность входить в систему logger и сделал оболочку
+ 5.
+   - Дал возможность входить в систему `logger` и сделал оболочку
 
-   - Перенаправил окружение в файл /tmp/logger-envs
+   - Перенаправил окружение в файл `/tmp/logger-envs`
 
-   - Переключение с полной инициализации окружения и сравнение переменных окружения
+   - Переключение с полной инициализацией окружения и сравнение переменных окружения
 
- 6. Создал от имени logger директорию /tmp/logger-dir из под основного пользователя
+ <img width="1104" height="735" alt="image" src="https://github.com/user-attachments/assets/ee778f2c-9354-4f47-9833-9defff7e80c6" />
+
+ 6. Создал от имени `logger` директорию `/tmp/logger-dir` из под основного пользователя
+
+ <img width="989" height="407" alt="image" src="https://github.com/user-attachments/assets/3e99dc2f-3cc2-41a8-a8c2-2abc676c37eb" />
+
 
 
