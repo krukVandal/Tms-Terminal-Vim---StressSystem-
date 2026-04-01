@@ -122,15 +122,42 @@
 
 # System-Stress:
 
- 1. С помощью top определил load average
- 2. Запустил stress-ng 
- 3. Запустил dstat и mpstat испугался и выключил
- 4. Отыскал нагрузку с помощью iostat dx 1 
- 5. Запустил еще раз stress-ng и добавил два снимка из лога с разницей с нагрузкой и без нагрузки в atop и приложил скриншот sar 
-  - atop -r /var/log/atop/atop_20260401 -b 13:12 -e 13:54
- 6. Вывел openssl
-  - pidstat -G openssl
+ 1. С помощью top определил `load average`
+
+ <img width="1212" height="333" alt="image" src="https://github.com/user-attachments/assets/1c13804c-3b25-43b7-9218-85ca450e6167" />
+
+ 2. Запустил `stress-ng`
+
+ <img width="1206" height="629" alt="image" src="https://github.com/user-attachments/assets/166578c8-deba-4352-8693-4f6d771ed8c6" />
+
+ 3. Запустил `dstat` и `mpstat` мониторил нагрузку
+
+ <img width="1184" height="722" alt="image" src="https://github.com/user-attachments/assets/dc9b6237-c0a2-4eb2-98f5-544aa13ab339" />
+
+ 4. Отыскал нагрузку с помощью `iostat dx 1`
+
+ <img width="1226" height="395" alt="image" src="https://github.com/user-attachments/assets/88798c13-93df-464f-a87f-f4db74a1e8ec" />
+
+ 5. Запустил еще раз `stress-ng` и добавил два снимка из лога с разницей с нагрузкой и без нагрузки в `atop` и приложил скриншот `sar` 
+  - `atop -r /var/log/atop/atop_20260401 -b 13:12 -e 13:54`
+
+ <img width="1210" height="679" alt="image" src="https://github.com/user-attachments/assets/ad2f2c59-5d59-4926-917c-90f93cc7a14e" />
+
+ <img width="1211" height="674" alt="image" src="https://github.com/user-attachments/assets/d5dedd00-5a46-4d21-8a0c-d1587155d565" />
+
+ <img width="1210" height="270" alt="image" src="https://github.com/user-attachments/assets/4d0c2ffa-29b0-484e-a8a9-23073584119b" />
+
+ 6. Вывел `openssl`
+  - `pidstat -G openssl`
+
+ <img width="981" height="154" alt="image" src="https://github.com/user-attachments/assets/f61aba5c-a2d1-49df-8a04-10a874492085" />
+
  7. Для вывова время выполнения и потребления памяти
-  - /usr/bin/time -f "Real: %e s, User: %U s, Sys: %S s, MaxMem: %M KB" sh -c "sleep 5; ls -R /usr"
- 8. Параметры вывовил по одному через флаг -o 
+  - `/usr/bin/time -f "Real: %e s, User: %U s, Sys: %S s, MaxMem: %M KB" sh -c "sleep 5; ls -R /usr"`
+
+ <img width="510" height="51" alt="image" src="https://github.com/user-attachments/assets/02bf14ee-a74a-4143-b1f8-1d7380171ea9" />
+
+ 8. Параметры вывовил по одному через флаг `-o` 
+
+ <img width="625" height="456" alt="image" src="https://github.com/user-attachments/assets/bf97f01f-bec0-4072-a3c3-cd62bde8b74a" />
 
