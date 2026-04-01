@@ -138,7 +138,7 @@
 
  <img width="1226" height="395" alt="image" src="https://github.com/user-attachments/assets/88798c13-93df-464f-a87f-f4db74a1e8ec" />
 
- 5. Запустил еще раз `stress-ng` и добавил два снимка из лога с разницей с нагрузкой и без нагрузки в `atop` и приложил скриншот `sar` 
+ 5. Запустил еще раз `stress-ng` и добавил два снимка из лога с разницей с нагрузкой и без нагрузки обратите внимание на время в `atop` и приложил скриншот `sar` 
   - `atop -r /var/log/atop/atop_20260401 -b 13:12 -e 13:54`
 
  <img width="1210" height="679" alt="image" src="https://github.com/user-attachments/assets/ad2f2c59-5d59-4926-917c-90f93cc7a14e" />
