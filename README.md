@@ -120,5 +120,17 @@
 
  <img width="989" height="407" alt="image" src="https://github.com/user-attachments/assets/3e99dc2f-3cc2-41a8-a8c2-2abc676c37eb" />
 
+# System-Stress:
 
+ 1. С помощью top определил load average
+ 2. Запустил stress-ng 
+ 3. Запустил dstat и mpstat испугался и выключил
+ 4. Отыскал нагрузку с помощью iostat dx 1 
+ 5. Запустил еще раз stress-ng и добавил два снимка из лога с разницей с нагрузкой и без нагрузки в atop и приложил скриншот sar 
+  - atop -r /var/log/atop/atop_20260401 -b 13:12 -e 13:54
+ 6. Вывел openssl
+  - pidstat -G openssl
+ 7. Для вывова время выполнения и потребления памяти
+  - /usr/bin/time -f "Real: %e s, User: %U s, Sys: %S s, MaxMem: %M KB" sh -c "sleep 5; ls -R /usr"
+ 8. Параметры вывовил по одному через флаг -o 
 
